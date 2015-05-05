@@ -1,0 +1,63 @@
+
+a {
+	color: $color-link;
+}
+
+a:hover {
+	color: $color-link-hover;
+}
+
+body {
+	background: #eee;
+	font-size: 16px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	margin:0;
+}
+
+/* Page structure
+------------------------------------------*/
+
+header {
+	margin: 0 auto;
+	padding: 1em auto;
+	width:88%;
+	max-width: 960px;
+}
+
+#wrapper {
+	width: 100%;
+	padding: 1em 0;
+	background: #fff;
+	@include shadow();
+}
+
+#container {
+	margin: 0 auto;
+	padding: 0 auto;
+	width: 88%;
+	max-width: 960px;
+		
+}
+
+footer {
+	margin: 0 auto;
+	padding: 0 auto;
+	width:88%;
+	max-width: 960px;
+}
+
+
+
+
+/* Misc.
+------------------------------------------*/
+
+.clearfix:after {
+	content:".";
+	display:block;
+	height: 0;
+	clear:both;
+	visibility:hidden;
+
+}
+

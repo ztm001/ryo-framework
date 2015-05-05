@@ -1,0 +1,45 @@
+/*
+
+Variables
+
+*/
+
+// Text colours
+
+$color-text: #333;
+
+$color-link: #333;
+
+$color-link-hover: #000;
+
+$color-accent:#fff;
+
+$color-selecting: tint($color-link-hover, 80%);
+
+$color-selected: tint($color-link-hover, 90%);
+
+$color-background: #eee;
+
+$font-cursive: 'Shadows Into Light', cursive;
+
+$breakpoint-3: 48em; // 768px / 16px
+$breakpoint-2: 36em; // 576px / 16px
+$breakpoint-1: 24em; // 384px / 16px
+
+// Fonts
+
+$font-sans-serif: "Trebuchet MS", Helvetica, sans-serif;
+
+// default gradients
+
+$color-gradient-from: #eeeeee;
+$color-gradient-to: darken($color-gradient-from, 6.5%);
+$color-gradient-border: darken($color-gradient-from, 13.5%);
+
+// Border colours
+
+$color-border: #cccccc;
+
+// Container widths
+
+$container-max-width: 60em; // 960px / 16px

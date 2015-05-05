@@ -1,0 +1,45 @@
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# SASS #
+######################
+
+.sass-cache
+
+# CSS #
+######################
+
+assets/css
+
+# Images #
+######################
+
+assets/*.png
+!assets/img/*.png
+
+# Bower #
+######################
+
+bower_components
+
+# NPM #
+######################
+
+node_modules
+
+
+
+
+
+
+
+
+
+

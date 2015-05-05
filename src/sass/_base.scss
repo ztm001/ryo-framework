@@ -1,0 +1,21 @@
+/* Base
+------------------------------------------*/
+
+/* Clearfix */
+
+/*
+Clearfix using the 'A new micro cleafix hack' method.
+More info: http://nicolasgallagher.com/micro-clearfix-hack/
+*/
+.clearfix,
+header,
+footer,
+nav ul,
+.jquery-ui-icons
+ {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}

@@ -1,0 +1,19 @@
+/*
+
+Mixins
+
+*/
+
+@mixin shadow() {
+	-webkit-box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+	-moz-box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+	-o-box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+	box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+// standard gradients
+
+@mixin gradient-linear($color-gradient-from, $color-gradient-to) {
+    background-color: $color-gradient-to;
+    @include background-image(linear-gradient($color-gradient-from, $color-gradient-to));
+}

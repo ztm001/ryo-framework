@@ -6,7 +6,7 @@ var gulp = require('gulp');
 // Include Plugins
 
 var jshint = require('gulp-jshint');
-var uglify = require('gulp-ulgify');
+var uglify = require('gulp-uglify');
 var sass = require('gulp-ruby-sass');
 
 
@@ -14,7 +14,7 @@ var sass = require('gulp-ruby-sass');
 
 gulp.task('lint', function(){
 
-	return gulp.src('/js/*.js')
+	return gulp.src('src/js/*.js')
 	.pipe(jshint())
 	.pipe(jshint.reporter('default'));
 
@@ -37,21 +37,21 @@ gulp.task('scripts', function(){
 	return gulp.src([
 		'src/js/*.js', 
 		'node_modules/requirejs/require.js',
-		'node_modules/responsive-nav/responsive-nav.js',
+		'node_modules/responsive-nav/responsive-nav.js'])
 		.pipe(uglify())
 		.pipe(gulp.dest('assets/js'))
-		])
+		
 });
 
 //Compass SASS
 
 gulp.task('sass', function(){
 
-	return gulp.src('src/sass/styles.scss')
-		.pipe(sass({
-		compass:true,
-		style:'compressed'
-	}))
+	return sass('src/sass/styles.scss', { 
+			compass:true,
+			style:'compressed'
+	
+	})
 
 	.on('error', function (err) {console.log(err.message); })
 	.pipe(gulp.dest('assets/css'))
@@ -60,7 +60,7 @@ gulp.task('sass', function(){
 
 // Default task
 
-gulp.task('default', ['link', 'scripts', 'sass', 'watch']);
+gulp.task('default', ['lint', 'scripts', 'sass', 'watch']);
 
 
 

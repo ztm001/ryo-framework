@@ -18,16 +18,17 @@ Thumbs.db
 
 assets/css
 
+# JS #
+######################
+
+assets/js
+
 # Images #
 ######################
 
 assets/*.png
 !assets/img/*.png
 
-# Bower #
-######################
-
-bower_components
 
 # NPM #
 ######################
